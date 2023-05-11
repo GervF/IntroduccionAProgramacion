@@ -1,0 +1,24 @@
+body{
+    background-color: aquamarine;
+    }
+h1{
+    color: purple;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2{
+    color: blue;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
