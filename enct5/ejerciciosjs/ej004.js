@@ -17,8 +17,11 @@
 
 let preciolibro = 1750
 let preciocuaderno = 250
-let cantidad = 0
 let descuento = 0 
-let articulo = parseInt(promp("Ingrese el articulo a comprar: \n 1-Cuadernos \n 2-Libro"))
-if (articulo == 1) {cantidad = parseInt(prompt("Ingrese la cantidad de libros a comprar")) } 
-
+let articulo = parseInt(prompt("Ingrese el articulo a comprar: \n 1-Cuadernos \n 2-Libro"))
+if (articulo == 1) {articulo = preciocuaderno}
+else {articulo = preciolibro}
+let cantidad = parseInt(prompt("Ingrese la cantidad a comprar: "))
+if (cantidad = 12) {descuento = 0.06}
+else if (cantidad > 12 || cantidad <= 24) { descuento = 0.11}
+alert("Usted compro " + cantidad + " articulo/s , el total de su compra es $" + (articulo*cantidad) + "\n Tiene un descuento de $" + (articulo*cantidad*descuento) + " el total de su compra es: $" + ((articulo*cantidad)-(articulo*cantidad*descuento)))
