@@ -1,17 +1,14 @@
-/*Realiza un programa en JS, que pida números mientras no se ingrese uno negativo. 
-Al final, se debe mostrar la suma de los números ingresados*/
+// 1. Suma de "n" números naturales.
+// Hacer un programa que calcule la suma de los N
+// primeros números naturales, dónde N es el número
+// límite ingresado por teclado.
 
-let numero = 0;
-let sumanumeros = 0;
-let numerototal = 0;
+let numlimite = parseInt(prompt("Ingrese un numero limite y te digo la suma de sus numeros anteriores hasta ese numero"))
+let suma = 0
+let i = 1
 
-do{
-    numero = parseInt(prompt("Ingrese un numero"));
-    if(numero > 0){
-    sumanumeros = numero + sumanumeros};
-    }
-while (numero > 0) 
-
-    
-
-alert("La suma de los numeros ingresados es: " + sumanumeros)
+while (i <= numlimite) {
+    suma = suma + i;
+    i++;    
+}
+alert(suma)
